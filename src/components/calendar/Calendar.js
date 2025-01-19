@@ -73,7 +73,6 @@ export default function Calendar() {
   return (
     <div className="calendar-wrap">
       <div className="custom-date-picker">
-        <input type="text" id="dateInput" placeholder="Select Date" readOnly />
         <div id="calendar" className="calendar-container">
           <div className="calendar-header">
             <button id="prevMonth" className="nav-button" onClick={prevMonth}>
