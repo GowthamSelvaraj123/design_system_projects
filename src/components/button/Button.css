@@ -1,0 +1,105 @@
+button {
+    margin-top:10px;
+    margin-left:10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  button:focus, button:focus-visible{outline: unset;}
+  
+  .primary {
+    background-color:var(--primary-color);
+    color: white;
+  }
+  
+  .primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .secondary {
+    background-color:var(--secondary-color);
+    color: white;
+  }
+  
+  .secondary:hover {
+    background-color: #5a6268;
+  }
+  .danger {
+    background-color: var(--danger-color);
+    color: white;
+  }
+  
+  .danger:hover {
+    background-color: #bd2130;
+  }
+  
+  .disabled {
+    background-color: #e9ecef;
+    color:var(--secondary-color);
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  
+  .outline {
+    background-color: transparent;
+    color:var(--primary-color);
+    border: 2px solid var(--primary-color);
+  }
+  
+  .outline:hover {
+    background-color:var(--primary-color);
+    color: white;
+  }
+  .ghost {
+    background-color: transparent;
+    color:var(--secondary-color);
+    border: none;
+  }
+  
+  .ghost:hover {
+    background-color: rgba(108, 117, 125, 0.1);
+  }
+  
+  .icon {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    color:var(--primary-color);
+  }
+  
+  .fab-btn {
+    width: 56px;
+    height: 56px;
+    background-color:var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fab-btn:hover {
+    background-color: #0056b3;
+  }
+  .toggle-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+  }
+  
+  .toggle-btn.active {
+    background-color: var(--danger-color);
+  }

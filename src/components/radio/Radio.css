@@ -1,0 +1,57 @@
+  .radio-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .radio-container input[type="radio"] {
+    display: none; /* Hide the default radio button */
+  }
+  
+  .radio-container .custom-radio {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    position: relative;
+    background-color: white;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .radio-container input[type="radio"]:checked + .custom-radio {
+    background-color: #007bff; /* Blue when checked */
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.5); /* Light blue shadow when checked */
+  }
+  
+  .radio-container .custom-radio::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .radio-container input[type="radio"]:checked + .custom-radio::after {
+    opacity: 1; /* Show the inner dot when checked */
+  }
+  
+  
+  .radio-container span {
+    font-size: 14px;
+    color:white;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+  }
